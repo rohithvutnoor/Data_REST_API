@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <br>
+      <h4>Set Details</h4><br>
+
+      <form action = '/setData' method = "POST">
+
+        <label for = "Name">User Name:</label>
+        <input type = "text" name="name"/></br>
+
+        <label for = "roll">Roll:</label>
+        <input type = "text" name="roll"/></br>
+
+        <label for = "Name">Dept:</label>
+        <input type = "text" name="dept"/></br>
+
+        <input type = "submit"/></br></br>
+
+      </form>
+    <br>
+      <h4>Get Details</h4>
+
+      <form action = '/getData' method = "POST"><br>
+        <label for = "Name">Search:</label>
+        <input type = "text" name="name"/>
+        <input type = "submit"/></br></br>
+      </form>
+    <form action = '/getAllData' method = "POST"><br>
+      <button>Find All</button></br></br>
+    </form>
+
+      </br></br></br></br>
+
+
+
+    </div>
+  </body>
+</html>
